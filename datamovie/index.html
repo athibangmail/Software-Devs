@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Data Movie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  {% set base = '.' %}
+  {% include template-navbar.html %}
+  <!-- TODO: Filter bars -->
+  
+  <div class="mainContiner bg-secondary d-flex p-3 justify-content-around">
+    <div class="team1 bg-info">
+      <svg width="500" height="500">
+        <text x="250" y="30" class="teamname">Royal Challengers Bangalore</text>
+        <circle cx="250" cy="250" r="200" fill="#1e9540"></circle>
+        <defs>
+          <path d="M 10,90 Q 100,15 200,70 Q 340,140 400,30"></path>
+        </defs>
+        <circle cx="270" cy="100" r="5" fill="#FFF"></circle>
+        <circle cx="230" cy="100" r="5" fill="#FFF"></circle>
+        <circle cx="250" cy="400" r="5" fill="#FFF"></circle>
+        <circle cx="270" cy="400" r="5" fill="#FFF"></circle>
+        <circle cx="230" cy="400" r="5" fill="#FFF"></circle>
+        <circle cx="250" cy="100" r="5" fill="#FFF"></circle>
+        <line x1="230" y1="100"  x2="270" y2="100" stroke-width="3" stroke="#000"></line> 
+        <line x1="230" y1="400"  x2="270" y2="400" stroke-width="3" stroke="#000"></line> 
+        <rect width="80" height="200" x="210" y="150" fill="#DDD"></rect>
+        <text x="250" y="200" >RUNS</text>
+        <text x="250" y="250"  class="run">0</text>
+
+        <circle cx="100" cy="200" r="20" fill="#FFF"></circle>
+        <text x="100" y="206" >6</text>
+
+        <circle cx="150" cy="200" r="20" fill="#FFF"></circle>
+        <text x="150" y="206" >4</text>
+
+        <text x="100" y="250"  class="sixs">0</text>
+        <text x="150" y="250"  class="fours">0</text>
+        
+        <rect width="80" height="30" x="320" y="180" fill="#FFF"></rect>
+        <text x="360" y="200">Extra's</text>
+        <text x="350" y="250"  class="extra_runs">0</text>
+
+
+        
+      </svg>
+    </div>
+    <div class="d-flex flex-column justify-content-around">
+      <div>
+        <button class="btn-info" id="start-fing">Let's Begin 1st Ing</button>
+      </div>
+      <div>
+        <button class="btn-warning hide" id="start-sing">Let's Begin 2nd Ing</button>
+      </div>
+    </div>
+    <div class="team2  bg-warning">
+      <svg width="500" height="500">
+          <text x="250" y="30" class="teamname">Chennai Super Kings</text>
+        <circle cx="250" cy="250" r="200" fill="#1e9540"></circle>
+        <circle cx="250" cy="100" r="5" fill="#FFF"></circle>
+        <circle cx="270" cy="100" r="5" fill="#FFF"></circle>
+        <circle cx="230" cy="100" r="5" fill="#FFF"></circle>
+        <circle cx="250" cy="400" r="5" fill="#FFF"></circle>
+        <circle cx="270" cy="400" r="5" fill="#FFF"></circle>
+        <circle cx="230" cy="400" r="5" fill="#FFF"></circle>
+        <line x1="230" y1="100"  x2="270" y2="100" stroke-width="3" stroke="#000"></line> 
+        <line x1="230" y1="400"  x2="270" y2="400" stroke-width="3" stroke="#000"></line> 
+        <rect width="80" height="200" x="210" y="150" fill="#DDD"></rect>
+        <text x="250" y="200" >RUNS</text>
+        <text x="250" y="250"  class="run">0</text>
+
+        <circle cx="100" cy="200" r="20" fill="#FFF"></circle>
+        <text x="100" y="206" >6</text>
+
+        <circle cx="150" cy="200" r="20" fill="#FFF"></circle>
+        <text x="150" y="206" >4</text>
+
+        <text x="100" y="250"  class="sixs">0</text>
+        <text x="150" y="250"  class="fours">0</text>
+        
+        <rect width="80" height="30" x="320" y="180" fill="#FFF"></rect>
+        <text x="360" y="200">Extra's</text>
+        <text x="350" y="250"  class="extra_runs">0</text>
+      </svg>
+    </div>
+  </div>
+
+  <script src="ui/jquery/dist/jquery.min.js"></script>
+  <script src="ui/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="node_modules/d3/dist/d3.min.js"></script>
+  <script src="js/circket.js"></script>
+  <!-- Commonly used libraries:
+  <script src="ui/d3v5/dist/d3.min.js"></script>
+  <script src="ui/lodash/lodash.min.js"></script>
+  <script src="ui/morphdom/dist/morphdom-umd.min.js"></script>
+  <script src="ui/g1/dist/g1.min.js"></script>
+  <script src="ui/moment/min/moment-with-locales.min.js"></script>
+  <script src="ui/daterangepicker/daterangepicker.js"></script>
+  <script src="ui/leaflet/dist/leaflet.js"></script>
+  <script src="ui/topojson/dist/topojson.min.js"></script>
+  -->
+</body>
+
+</html>
